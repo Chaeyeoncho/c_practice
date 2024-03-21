@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main(void)
+{
+	int x = 0;
+	printf("x를 입력하세요 :  ");
+	    scanf_s("%d",&x);
+		int result = 3 * x * x * x * x * x + 2 * x * x * x * x - 5 * x * x * x * -x * x + 7 * x - 6;
+		printf("결과는 %d 이다",result);
+	return 0;
+}
