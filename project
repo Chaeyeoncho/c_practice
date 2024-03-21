@@ -1,1 +1,11 @@
+#include <stdio.h>
+int main(void)
+{
+	int x = 0;
+	printf("x를 입력하세요 :  ");
+	    scanf_s("%d",&x);
+		printf("3 *x*x*x*x*x + 2*x*x*x*x - 5 *x*x*x* - x*x + 7*x - 6, %d");
+	return 0;
+}
 
+#이렇게 하면 3 *x*x*x*x*x + 2*x*x*x*x - 5 *x*x*x* - x*x + 7*x - 6 이 식도 모두 출력 되기에 이거는 따로 result로 빼서 변수를 생성해야함
