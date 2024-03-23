@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main(void) {
+    int number;
+    printf("Enter a two-digit number:  ");
+    scanf_s("%d", &number);
+    printf("The reversal is : %d % 10 %d/10 ", number);
+    return 0;
+}
