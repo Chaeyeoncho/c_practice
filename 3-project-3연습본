@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(void) {
+    int prefix, identifier, code, number, digit
+    printf("Enter ISBN :   " );
+    scanf_s("%d%d%d - %d - %d%d%d - %d%d%d%d%d - %d", &prepix, &identifier, &code, &number, &digit);
+
+    printf("GSI prefix\n", %d %d %d, prepix);
+    printf("Group identifier\n", %d, identifier);
+    printf("Publisher code\n", %d %d %d, code);
+    printf("Item number\n", %d %d %d %d, number);
+    printf(" Check digit\n", %d, digit);
+    return 0;
+}
