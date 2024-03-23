@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void) {
+
+    int a, b, c, d, e, f, g, h, i, j, k,l, sum1, sum2, finalsum, digit;
+
+    printf("Enter the first 12 digits of a UPC:  ");
+    scanf_s("%1d%1d%1d%1d%1d%1d%1d%1d%1d%1d%1d", &a, &b, &c, &d, &e, &f, &g, &h, &i, &j, &k, &l);
+    
+    sum1 = b + d + f + h + j + l;
+    sum2 = a + c + e + g + i + k;
+    finalsum = sum1 * 3 + sum2 - 1;
+    digit= 9-(finalsum % 10);
+
+    printf("Check digit: %d", digit);
+
+    return 0;
+}
