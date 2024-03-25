@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void) {
+    int h, m;
+    char x;
+
+    printf("Enter a 24 - hour time :  ");
+    scanf_s("%d:%d", &h, &m);
+    printf(" Equivalent 12 - hour time : %d:%d ",h-12, m, x);
+    if (h< 12) {
+        x= "am";
+    }
+    else {
+       x=  "pm";}
+    return 0;
+}
