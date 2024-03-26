@@ -26,3 +26,5 @@ int main() {
         
     return 0;
 }
+
+//만약 if else if else 이런식으로 표현한다면 else다음에 조건문은 절대 금지, 그리고 else뒤에 바로 { 넣어서 채우기 !
