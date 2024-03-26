@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main() {
+    int h, m, hour;
+    printf("시간을 입력하세요: ");
+    scanf_s("%d:%d", &h, &m);
+
+    hour = (h * 60) + m;
+
+    if ((583 - hour) < (hour - 480))
+        printf("8:00 a.m., arriving at 10:16 a.m.\n");
+    else
+        printf("9:43 a.m., arriving at 11:52 a.m.\n");
+
+    if ((679 - hour) < (hour - 583))
+        printf("9:43 a.m., arriving at 11:52 a.m.\n");
+    else
+        printf("11:19 a.m., arriving at 1:31 p.m.\n");
+
+    if ((767 - hour) < (hour - 679))
+        printf("11:19 a.m., arriving at 1:31 p.m.\n");
+    else
+        printf("12:47 p.m., arriving at 3:00 p.m.\n");
+
+    if ((840 - hour) < (hour - 767))
+        printf("12:47 p.m., arriving at 3:00 p.m.\n");
+    else
+        printf("2:00 p.m., arriving at 4:08 p.m.\n");
+
+    if ((945 - hour) < (hour - 840))
+        printf("2:00 p.m., arriving at 4:08 p.m.\n");
+    else
+        printf("3:45 p.m., arriving at 5:55 p.m.\n");
+
+    if ((1020 - hour) < (hour - 945))
+        printf("3:45 p.m., arriving at 5:55 p.m.\n");
+    else
+        printf("7:00 p.m., arriving at 9:20 p.m.\n");
+
+    if ((1185 - hour) < (hour - 1020))
+        printf("7:00 p.m., arriving at 9:20 p.m.\n");
+    else
+        printf("9:45 p.m., arriving at 11:58 p.m.\n");
+
+    printf("가장 가까운 도착시간을 출력하면 %02d:%02d입니다.\n", hour / 60, hour % 60);
+
+    return 0;
+}
