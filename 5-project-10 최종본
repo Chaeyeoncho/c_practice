@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+int main() {
+    int n, grade;
+    printf(" Enter numberical grade :    ");
+    scanf_s("%d", &n);
+    
+    grade = n / 10;
+
+    if (n > 100 || n < 0)
+    {
+        printf("error");
+        return 1;
+    }
+
+    switch (grade)
+    {
+    case 10:
+        printf("Letter grade : A");
+        break;
+
+    case 9:
+        printf("Letter grade : A");
+        break;
+    case 8:
+        printf("Letter grade : B");
+        break;
+    case 7:
+        printf("Letter grade : C");
+        break;
+    case 6:
+        printf("Letter grade : D");
+        break;
+    case 5:
+        printf("Letter grade : F");
+        break;
+    case 4:
+        printf("Letter grade : F");
+        break;
+    case 3:
+        printf("Letter grade : F");
+        break;
+    case 2:
+        printf("Letter grade : F");
+        break;
+    case 1:
+        printf("Letter grade : F");
+        break;
+    case 0:
+        printf("Letter grade : F");
+        break;
+    }
+
+    return 0;
+}
