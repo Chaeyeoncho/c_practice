@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+
+    float a, b, c, d, e, f, max;
+    printf("Enter a number :  ");
+        scanf_s("%f", &a);
+        printf("Enter a number :  ");
+        scanf_s("%f", &b);
+        printf("Enter a number :  ");
+        scanf_s("%f", &c);
+        printf("Enter a number :  ");
+        scanf_s("%f", &d);
+        printf("Enter a number :  ");
+        scanf_s("%f", &e);
+        printf("Enter a number :  ");
+        scanf_s("%f", &f);
+      
+        max = a,b,c,d,e,f;
+
+        max = a;
+        if (b > max) max = b;
+        if (c > max) max = c;
+        if (d > max) max = d;
+        if (e > max) max = e;
+        if (f > max) max = f;
+        
+        printf(" The largest number entered was %f", max);
+        
+   
+    return 0;
+}
