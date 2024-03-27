@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, n, alpha, beta;
+        printf("Enter a fraction:   ");
+        scanf_s("%d/%d", &alpha, &beta);
+
+        a = alpha;
+        b = beta;
+   
+        while (b != 0) {
+            n = a % b;
+            a = b;
+            b = n;
+        }
+
+        printf("In lowest terms :%d/%d",alpha / a, beta / a );
+
+    return 0;
+}
