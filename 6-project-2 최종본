@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, divisor;
+    printf("Enter two integers :   ");
+        scanf_s("%d %d", &a, &b);
+
+        while (b != 0) {
+            divisor = a % b;
+            a = b;
+            b = divisor;
+        }
+
+        printf("Greatest common divisor : %d\n", a);
+
+    return 0;
+}
