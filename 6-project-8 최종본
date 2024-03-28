@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    printf("Enter number of days in month :   ");
+    scanf_s("%d", &n);
+    printf("Enter starting day of the week(1 = Sun, 7 = Sat) :  ");
+    scanf_s("%d", &i);
+
+    // 달력의 첫부분을 1로 가정하고 1~7일때 7로 나누어서 0이 되면 다음줄로 넘어가게 표현해야됨 
+    // 그리고 그것을 n까지 반복하게 설정해야함
+    printf("\n Mo Th We Tr Fr Sa Su \n");
+    for (int space = 1; space <= 3; space++) 
+    {
+        printf("  ");
+    }
+   
+    int day = 1;
+    for (int day = 1; day <= n; day++)
+    {
+        printf("%3d", day);
+        if ((i + day - 1) % 7 == 0) {
+            printf("\n");
+        }
+    }
+
+    return 0;
+}
