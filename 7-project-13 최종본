@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int length = 0;
+    int words = 1;
+    char s;
+
+    printf("Enter a sentence: ");
+    scanf_s("%c", &s);
+
+    while ((s = getchar()) != '\n') {
+        if (s == ' ')
+            words++;
+        else
+            length++;
+        }
+
+    printf("Average word length : %.1f", (float)length/words);
+    return 0;
+}
+// 예를 들어 만약 jo chae yeon 이라고 친다고 가정하면 2+4+4/3 이렇게 된다. 이는 글자수의 합 / 공백의 빈칸의 갯수 + 1 을 의미한다. 
