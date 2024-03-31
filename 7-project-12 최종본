@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+    float total, num;
+    char c;
+
+    printf("Enter an expression :    ");
+    scanf_s("%f", &total);
+
+    while ((c = getchar()) != '\n') {
+        switch (c) {
+        case '+' :
+            scanf_s("%f", &num);
+            total += num;
+            break;
+        case '-' :
+            scanf_s("%f", &num);
+            total -= num;
+            break;
+        case '*':
+            scanf_s("%f", &num);
+            total *= num;
+            break;
+        case '/':
+            scanf_s("%f", &num);
+            total /= num;
+            break;
+
+        default:
+            break;
+        }
+    }
+    printf("Value of expression : %f", total);
+    return 0;
+}
+// 수식이 정해진게 아닌 내가 입력한 수식으로 계산해야하기에 문자를 받고 여기에 사용된 연산자는 4개로 한정되어있기에 case문을 쓴다.. 
