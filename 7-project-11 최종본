@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <ctype.h>
+
+int main() {
+    int n = 0;
+    char text;
+    printf("Enter a sentence : ");
+
+    while ((text = getchar()) != '\n') {
+        text = tolower(text);
+        if (text == 'a' || text == 'e' || text == 'i' || text == 'o' || text == 'u') {
+            n++;
+        }
+    }
+
+    printf("Your sentence contains %d vowels", n);
+    return 0;
+
+}
