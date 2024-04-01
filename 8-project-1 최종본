@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int number;
+
+    printf("Enter a number: ");
+    scanf_s("%d", &number);
+
+    int count[10] = { 0 };
+
+    // 입력된 숫자의 각 자릿수를 확인하여 등장한 횟수를 count 배열에 저장
+    while (number > 0) {
+        int digit = number % 10;
+        count[digit]++;
+        number /= 10;
+    }
+
+    // 반복된 숫자가 있는지 확인하고 출력
+    printf("Repeated digit(s): ");
+    for (int i = 0; i < 10; i++) {
+        if (count[i] > 1) {
+            printf("%d ", i);
+        }
+    }
+
+    return 0;
+}
+// 일단 %10을 해서 나머지를 알아내면 이는 10의 자리수를 알아낼 수 있음 , 이렇게 하고 나온 10의 자리의 수를 count배열에 저장하고 갯수를 더함. 
+// 그러고 number에 다시 10을 나누어서 1234라 치면 123만 몫으로 가지게 됨 그러고 반복함.
+// 이제 반복한 숫자를 print 해야하기에 count가 1보다 크면 출력하게 만든다. 
